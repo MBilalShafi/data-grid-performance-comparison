@@ -19,30 +19,4 @@ pnpm lint
 pnpm build
 ```
 
-## Private GitHub Repo
-
-After authenticating `gh` with `gh auth login`, run:
-
-```bash
-git init
-git add .
-git commit -m "Initial data grid performance comparison app"
-gh repo create data-grid-performance-comparison --private --source=. --remote=origin --push
-```
-
-## Vercel
-
-After installing/authenticating the Vercel CLI, run:
-
-```bash
-pnpm install
-pnpm build
-vercel
-vercel --prod
-```
-
-For Vercel settings, use:
-
-- Framework preset: Vite
-- Build command: `pnpm build`
-- Output directory: `dist`
+Deployed at https://data-grid-performance-comparison.vercel.app/
